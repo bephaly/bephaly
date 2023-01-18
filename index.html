@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+	<table border="0" width="100%">
+<tr>
+<td td colspan="2" bgcolor="teal">
+<img src="images/logo.jpg" align="left" width="10%" height="10%"></img>
+	<h2 align="center">PHONE NO.  AND EMAIL ADRESS</h2>
+</tr>
+</td>
+<tr>
+<td td colspan="2" bgcolor="yellow">
+	<a href="index.html">HOME</a>
+	<a href="about.html">ABOUT US</a>
+	<a href="portfolio.html">PORTFOLIO</a>
+	<a href="digital.html">DIGITAL LIBRARY</a>
+	<a href="contact.html">CONTACT US</a>
+
+</tr>
+</td>
+
+<tr>
+<td td bgcolor="grey">
+	<div style="max-width:50%" height="50%">
+<img class="mySlides"  src="images/1.jpg" style="width:100%">
+<img class="mySlides"  src="images/2.jpg" style="width:100%">   
+<img class="mySlides"  src="images/3.jpg" style="width:100%">
+<img class="mySlides"  src="images/4.jpg" style="width:100%"> 
+<img class="mySlides"  src="images/5.jpg" style="width:100%;">
+</div>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+    <span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+</td>
+<td bgcolor="green">memo</td>
+</tr>
+<tr>
+<td td bgcolor="ligt green">content area</td>
+<td bgcolor="blue">up coming events</td>
+</tr>
+<td td colspan="2" bgcolor="pink">
+<center>
+Postal Address: P.O box 165, 40105 Maseno. <br>
+Tel: +254 202311912<br>
+Email: info@bnunyoregirlsschool.sc.ke  <br>
+Website: www.bunyoregirlsschool.sc.ke <br>
+Copyright @2023
+</center>
+</td>
+</body>
+</html>
